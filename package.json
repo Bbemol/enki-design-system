@@ -1,0 +1,20 @@
+{
+  "name": "enki-design-system",
+  "version": "1.0.0",
+  "description": "Design system used on the project Enki",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bbemol/enki-design-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bbemol/enki-design-system/issues"
+  },
+  "homepage": "https://github.com/Bbemol/enki-design-system#readme"
+}
