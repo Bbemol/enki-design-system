@@ -1,11 +1,9 @@
-@import 'variables';
-
 .styleguideHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background: $promoColor1;
+  background: $black;
   color: $white;
   position: fixed;
   width: 100%;
@@ -13,9 +11,6 @@
   z-index: 1;
   height: 60px;
 
-  &__title {
-      
-  }
 
   &__nav {
       display: flex;
