@@ -1,6 +1,6 @@
 {
   "name": "enki-design-system",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "Design system used on the project Enki",
   "main": "index.js",
   "scripts": {
