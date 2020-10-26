@@ -4,7 +4,8 @@
   "description": "Design system used on the project Enki",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build index.html --public-url https://bbemol.github.io/enki-design-system/ --out-dir=docs"
   },
   "repository": {
     "type": "git",
