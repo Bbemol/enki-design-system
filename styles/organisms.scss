@@ -1,0 +1,269 @@
+@import 'variables';
+
+.styleguideHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: $black;
+  color: $white;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+  height: 60px;
+
+  &__title {
+      
+  }
+
+  &__nav {
+      display: flex;
+      align-items: center;
+
+      > a {
+          display: block;
+          position: relative;
+          color: $white;
+          text-decoration: none;
+          padding-bottom: 3px;
+
+          &:before {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 3px;
+              bottom: 0;
+              left: 0;
+              background: $primaryColor;
+              visibility: hidden;
+              transform: scaleX(0);
+              transition: all .2s ease-in-out;
+          }
+
+          &:hover,
+          &.active {
+              &:before {
+                  visibility: visible;
+                  transform: scaleX(1);
+              }
+          }
+
+          &:not(:first-child) {
+              margin-left: 10px;
+          }
+      }
+  }
+}
+
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 20px 0 20px;
+}
+
+.styleguideContainer {
+  display: flex;
+  margin: 0 -20px;
+  padding: 20px 0;
+}
+
+.sidebar {
+  width: 20%;
+  padding: 0 20px;
+  height: 100vh;
+  position: sticky;
+  top: 66px;
+  box-shadow: 2px 0px 0px 0px rgba(0, 0, 0, .05);
+
+  &__title {
+      font-family: $primaryFont;
+      font-weight: 700;
+      font-size: rem-calc(32);
+      margin: 0 0 10px 0;
+  }
+}
+
+.styleguideContent {
+  width: 80%;
+  padding: 0 20px;
+
+  &__title { 
+      font-family: $primaryFont;
+      font-weight: 700;
+      font-size: rem-calc(32);
+      margin: 0 0 10px 0;
+  }
+}
+
+.styleguideNav {
+  &__link {
+      position: relative;
+      display: block;
+      color: $black;
+      transition: border .2s ease-in-out;
+      text-decoration: none;
+      padding: 10px;
+
+      &:not(:first-child) {
+          margin-top: 10px;
+      }
+
+      &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          width: 5px;
+          height: 100%;
+          background: transparent;
+          transition: all .3s ease-in-out;
+          opacity: .3;
+      }
+
+      &:hover,
+      &.-active {
+          border-left: 5px solid $primaryColor;
+          transition: .2s;
+          text-decoration: none;
+          font-weight: 700;
+
+          &:before {
+              width: 100%;
+              background: $primaryColor;
+          }
+      }
+  }
+}
+
+.colors {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__color {
+      margin: 0 8% 40px 0;
+      display: flex;
+      flex-direction: column;
+  }
+
+  &__colorCircle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0 auto 15px auto;
+      border: 1px solid transparent;
+
+      &.-primary {
+          background: $primaryColor;
+      }
+
+      &.-promo1 {
+          background: $promoColor1;
+      }
+      &.-promo2 {
+          background: $promoColor2;
+      }
+
+      &.-black {
+          background: $black;
+      }
+
+      &.-white {
+          background: $white;
+          border-color: $black;
+      }
+      &.-greyHover {
+          background: $greyHover;
+      }
+
+      &.-greyDark2 {
+          background: $greyDark2;
+      }
+
+      &.-greyDark {
+          background: $greyDark;
+      }
+
+      &.-greyLight {
+          background: $greyLight;
+      }
+
+      &.-background {
+          background: $background;
+      }
+
+
+      &.-error {
+          background: $error;
+      }
+
+      &.-valid {
+          background: $valid;
+      }
+  }
+
+  &__colorName {
+      font-size: rem-calc(10);
+      margin-bottom: 5px;
+  }
+
+  &__colorHex {
+      font-size: rem-calc(10);
+  }
+}
+
+.section {
+  &__bloc {
+      margin-bottom: 30px;
+      > div {
+          margin-bottom: 10px;
+      }
+  }
+
+  &__badge {
+      color: $white;
+      background: $greyDark;
+      padding: 0 7px;
+      font-size: rem-calc(20);
+  }
+
+  &__legend {
+      color: $greyDark;
+      font-size: rem-calc(13);
+      display: block;
+      margin: 15px 0 5px 0;
+  }
+
+  &__buttons {
+      display: flex;
+      margin: 20px -20px;
+  }
+
+  &__button {
+      display: flex;
+      flex-direction: column;
+      padding: 0 20px;
+      width: 100%;
+
+      span {
+          display: block;
+          margin-bottom: 5px;
+          font-size: rem-calc(12);
+          color: $greyDark;
+      }
+  }
+  &__grid {
+      padding: 90px 20px 40px;
+
+  }
+}
+.grid-example {
+  margin-top: 20px;
+  &__wrapper div {
+      background: #f9e7e1;
+  }
+}

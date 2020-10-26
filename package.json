@@ -11,10 +11,14 @@
     "url": "git+https://github.com/Bbemol/enki-design-system.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Emylson",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Bbemol/enki-design-system/issues"
   },
-  "homepage": "https://github.com/Bbemol/enki-design-system#readme"
+  "homepage": "https://github.com/Bbemol/enki-design-system#readme",
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "sass": "^1.27.0"
+  }
 }

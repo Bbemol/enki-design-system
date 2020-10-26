@@ -1,0 +1,30 @@
+// Colors
+
+$primaryColor: #F9E7E1;
+$promoColor1: #FF7373;
+$promoColor2: #E66464;
+
+$black: #000000;
+$white: #ffffff;
+
+$greyHover: #3A3A3A;
+$greyDark: #A19A9E;
+$greyDark2: #C5BEC2;
+$greyLight: #E7E3E5;
+$background: #F6F6F6;
+
+$error: #D60000;
+$valid: #019A10;
+
+/**********************************************************
+ **************Name of variables fonts*********************  
+ **********************************************************/
+
+ $primaryFont : 'Overpass';
+ $mediaMobile: "all and (max-width:1023px)";
+
+
+ @function rem-calc($size) {
+    $remSize: $size / 16;
+    @return #{$remSize}rem;
+  }

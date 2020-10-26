@@ -1,0 +1,156 @@
+.btn {
+    border: none;
+    border-radius: 38px;
+    font-size: rem-calc(13);
+    font-weight: 400;
+    height: 45px;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    @media screen and (min-width: 768px) {
+        max-width: 300px;
+    }
+
+    &.-center {
+        margin: 0 auto;
+    }
+
+    &.-noflex {
+        display: inline-block;
+    }
+
+    &.-auto {
+        @media screen and (min-width: 768px) {
+            width: auto;
+            max-width: none;
+        }
+       
+    }
+    &.-small {
+        font-size: 11px;
+    }
+
+    &-primary {
+        color: $white;
+        background: $black;
+
+        &:hover, &.-hover {
+            background: $greyHover;
+            text-decoration: none;
+        }
+
+        &:disabled {
+            background: $greyDark;
+        }
+    }
+
+    &-secondary {
+        color: $black;
+        background: none;
+        border: 1px solid $black;
+
+        &:hover, &.-hover {
+            background: $black;
+            color: $white;
+            text-decoration: none;
+        }
+
+        &:disabled {
+            background: none;
+            color: $greyDark;
+            border-color: $greyDark;
+        }
+    }
+
+    &-basket {
+        color: $white;
+        background: $primaryColor;
+
+        &:hover, &:focus, &.-hover {
+            background: $greyHover;
+            text-decoration: none;
+        }
+
+        &.-disabled {
+            background: $greyDark;
+        }
+    }
+
+    &-icon {
+
+        .icon {
+            margin-right: 12px;
+        }
+    }
+
+    &-size {
+        width: 48px;
+        height: 39px;
+        line-height: 39px;
+        padding: 0;
+        border-radius: 0;
+        font-size: rem-calc(11);
+        border: 1px solid $greyLight;
+        background: none;
+        color: $black;
+        text-decoration: none;
+
+        &:not(.-selected):not(.-disabled) {
+            &:hover, &.-hover {
+                text-decoration: none;
+                border: 1px solid $black;
+                font-weight: 600;
+            }
+        }
+        
+        &.-selected {
+            background: $black;
+            border: 1px solid $black;
+            & a {
+                color: $white;
+            }
+        }
+
+        &.-disabled {
+            background: $greyLight;
+            border: 2px solid $greyLight;
+            color: $greyDark2;
+        }
+    }
+}
+
+// btn group
+.btn-group {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0;
+    @media screen and (min-width: 768px) {
+        flex-wrap: nowrap;
+        .btn:not(:first-child)  {
+            margin-left: 15px;
+        }
+    }
+    &.-center {
+        justify-content: center;
+    }
+    &.-spacebetween {
+        justify-content: space-between;
+    }
+
+
+    .btn {
+        margin-top: 15px;
+    }
+    
+}
