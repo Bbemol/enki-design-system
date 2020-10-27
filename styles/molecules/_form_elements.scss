@@ -88,7 +88,7 @@
 
     &__input {
         height: 45px;
-        border: 1px solid $greyDark;
+        border: 1px solid $grey;
         border-radius: 5px;
         padding: 10px;
         box-sizing: border-box;
@@ -96,12 +96,12 @@
     }
 
     &__valid {
-        color: $valid;
+        color: $green;
         font-size: rem-calc(13);
     }
 
     &__error {
-        color: $error;
+        color: $red;
         font-size: rem-calc(13);
     }
 
