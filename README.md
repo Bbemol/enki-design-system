@@ -1,6 +1,9 @@
 # enki-design-system
 Design system used on the project Enki
 
+## How to run the design system page and watch
+- parcel index.html
+
 ## How to publish online
 - npm run build
 - git push to github

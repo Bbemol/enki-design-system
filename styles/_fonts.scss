@@ -1,20 +1,441 @@
+
+
 @font-face {
-  font-family: "Overpass";
-  src: url(./fonts/Overpass-Light.ttf) format("truetype");
+  font-family: 'Overpass';
+  src: url('fonts/overpass/Overpass-Black.eot');
+  src: url('fonts/overpass/Overpass-Black.eot?#iefix') format('embedded-opentype'),
+      url('fonts/overpass/Overpass-Black.woff2') format('woff2'),
+      url('fonts/overpass/Overpass-Black.woff') format('woff'),
+      url('fonts/overpass/Overpass-Black.ttf') format('truetype'),
+      url('fonts/overpass/Overpass-Black.svg#Overpass-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('fonts/overpass/Overpass-LightItalic.eot');
+  src: url('fonts/overpass/Overpass-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/overpass/Overpass-LightItalic.woff2') format('woff2'),
+      url('fonts/overpass/Overpass-LightItalic.woff') format('woff'),
+      url('fonts/overpass/Overpass-LightItalic.ttf') format('truetype'),
+      url('fonts/overpass/Overpass-LightItalic.svg#Overpass-LightItalic') format('svg');
   font-weight: 300;
-  font-style: normal
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "Overpass";
-  src: url(./fonts/Overpass-SemiBold.ttf) format("truetype");
-  font-weight: 600;
-  font-style: normal
+  font-family: 'Overpass';
+  src: url('fonts/overpass/Overpass-Italic.eot');
+  src: url('fonts/overpass/Overpass-Italic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/overpass/Overpass-Italic.woff2') format('woff2'),
+      url('fonts/overpass/Overpass-Italic.woff') format('woff'),
+      url('fonts/overpass/Overpass-Italic.ttf') format('truetype'),
+      url('fonts/overpass/Overpass-Italic.svg#Overpass-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "Overpass";
-  src: url(./fonts/Overpass-ExtraBold.ttf) format("truetype");
+  font-family: 'Overpass';
+  src: url('fonts/overpass/Overpass-ExtraBoldItalic.eot');
+  src: url('fonts/overpass/Overpass-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/overpass/Overpass-ExtraBoldItalic.woff2') format('woff2'),
+      url('fonts/overpass/Overpass-ExtraBoldItalic.woff') format('woff'),
+      url('fonts/overpass/Overpass-ExtraBoldItalic.ttf') format('truetype'),
+      url('fonts/overpass/Overpass-ExtraBoldItalic.svg#Overpass-ExtraBoldItalic') format('svg');
   font-weight: 800;
-  font-style: normal
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Overpass';
+  src: url('fonts/overpass/Overpass-Bold.eot');
+  src: url('fonts/overpass/Overpass-Bold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/overpass/Overpass-Bold.woff2') format('woff2'),
+      url('fonts/overpass/Overpass-Bold.woff') format('woff'),
+      url('fonts/overpass/Overpass-Bold.ttf') format('truetype'),
+      url('fonts/overpass/Overpass-Bold.svg#Overpass-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('fonts/overpass/Overpass-ExtraLightItalic.eot');
+  src: url('fonts/overpass/Overpass-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/overpass/Overpass-ExtraLightItalic.woff2') format('woff2'),
+      url('fonts/overpass/Overpass-ExtraLightItalic.woff') format('woff'),
+      url('fonts/overpass/Overpass-ExtraLightItalic.ttf') format('truetype'),
+      url('fonts/overpass/Overpass-ExtraLightItalic.svg#Overpass-ExtraLightItalic') format('svg');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('fonts/overpass/Overpass-BoldItalic.eot');
+  src: url('fonts/overpass/Overpass-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/overpass/Overpass-BoldItalic.woff2') format('woff2'),
+      url('fonts/overpass/Overpass-BoldItalic.woff') format('woff'),
+      url('fonts/overpass/Overpass-BoldItalic.ttf') format('truetype'),
+      url('fonts/overpass/Overpass-BoldItalic.svg#Overpass-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('fonts/overpass/Overpass-SemiBold.eot');
+  src: url('fonts/overpass/Overpass-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/overpass/Overpass-SemiBold.woff2') format('woff2'),
+      url('fonts/overpass/Overpass-SemiBold.woff') format('woff'),
+      url('fonts/overpass/Overpass-SemiBold.ttf') format('truetype'),
+      url('fonts/overpass/Overpass-SemiBold.svg#Overpass-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('fonts/overpass/Overpass-ExtraLight.eot');
+  src: url('fonts/overpass/Overpass-ExtraLight.eot?#iefix') format('embedded-opentype'),
+      url('fonts/overpass/Overpass-ExtraLight.woff2') format('woff2'),
+      url('fonts/overpass/Overpass-ExtraLight.woff') format('woff'),
+      url('fonts/overpass/Overpass-ExtraLight.ttf') format('truetype'),
+      url('fonts/overpass/Overpass-ExtraLight.svg#Overpass-ExtraLight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Overpass';
+  src: url('fonts/overpass/Overpass-BlackItalic.eot');
+  src: url('fonts/overpass/Overpass-BlackItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/overpass/Overpass-BlackItalic.woff2') format('woff2'),
+      url('fonts/overpass/Overpass-BlackItalic.woff') format('woff'),
+      url('fonts/overpass/Overpass-BlackItalic.ttf') format('truetype'),
+      url('fonts/overpass/Overpass-BlackItalic.svg#Overpass-BlackItalic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('fonts/overpass/Overpass-Thin.eot');
+  src: url('fonts/overpass/Overpass-Thin.eot?#iefix') format('embedded-opentype'),
+      url('fonts/overpass/Overpass-Thin.woff2') format('woff2'),
+      url('fonts/overpass/Overpass-Thin.woff') format('woff'),
+      url('fonts/overpass/Overpass-Thin.ttf') format('truetype'),
+      url('fonts/overpass/Overpass-Thin.svg#Overpass-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('fonts/overpass/Overpass-SemiBoldItalic.eot');
+  src: url('fonts/overpass/Overpass-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/overpass/Overpass-SemiBoldItalic.woff2') format('woff2'),
+      url('fonts/overpass/Overpass-SemiBoldItalic.woff') format('woff'),
+      url('fonts/overpass/Overpass-SemiBoldItalic.ttf') format('truetype'),
+      url('fonts/overpass/Overpass-SemiBoldItalic.svg#Overpass-SemiBoldItalic') format('svg');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('fonts/overpass/Overpass-Regular.eot');
+  src: url('fonts/overpass/Overpass-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/overpass/Overpass-Regular.woff2') format('woff2'),
+      url('fonts/overpass/Overpass-Regular.woff') format('woff'),
+      url('fonts/overpass/Overpass-Regular.ttf') format('truetype'),
+      url('fonts/overpass/Overpass-Regular.svg#Overpass-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('fonts/overpass/Overpass-Light.eot');
+  src: url('fonts/overpass/Overpass-Light.eot?#iefix') format('embedded-opentype'),
+      url('fonts/overpass/Overpass-Light.woff2') format('woff2'),
+      url('fonts/overpass/Overpass-Light.woff') format('woff'),
+      url('fonts/overpass/Overpass-Light.ttf') format('truetype'),
+      url('fonts/overpass/Overpass-Light.svg#Overpass-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('fonts/overpass/Overpass-ExtraBold.eot');
+  src: url('fonts/overpass/Overpass-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/overpass/Overpass-ExtraBold.woff2') format('woff2'),
+      url('fonts/overpass/Overpass-ExtraBold.woff') format('woff'),
+      url('fonts/overpass/Overpass-ExtraBold.ttf') format('truetype'),
+      url('fonts/overpass/Overpass-ExtraBold.svg#Overpass-ExtraBold') format('svg');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('fonts/overpass/Overpass-ThinItalic.eot');
+  src: url('fonts/overpass/Overpass-ThinItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/overpass/Overpass-ThinItalic.woff2') format('woff2'),
+      url('fonts/overpass/Overpass-ThinItalic.woff') format('woff'),
+      url('fonts/overpass/Overpass-ThinItalic.ttf') format('truetype'),
+      url('fonts/overpass/Overpass-ThinItalic.svg#Overpass-ThinItalic') format('svg');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('fonts/barlow/Barlow-ExtraBold.eot');
+  src: url('fonts/barlow/Barlow-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/barlow/Barlow-ExtraBold.woff2') format('woff2'),
+      url('fonts/barlow/Barlow-ExtraBold.woff') format('woff'),
+      url('fonts/barlow/Barlow-ExtraBold.ttf') format('truetype'),
+      url('fonts/barlow/Barlow-ExtraBold.svg#Barlow-ExtraBold') format('svg');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('fonts/barlow/Barlow-BlackItalic.eot');
+  src: url('fonts/barlow/Barlow-BlackItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/barlow/Barlow-BlackItalic.woff2') format('woff2'),
+      url('fonts/barlow/Barlow-BlackItalic.woff') format('woff'),
+      url('fonts/barlow/Barlow-BlackItalic.ttf') format('truetype'),
+      url('fonts/barlow/Barlow-BlackItalic.svg#Barlow-BlackItalic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('fonts/barlow/Barlow-ThinItalic.eot');
+  src: url('fonts/barlow/Barlow-ThinItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/barlow/Barlow-ThinItalic.woff2') format('woff2'),
+      url('fonts/barlow/Barlow-ThinItalic.woff') format('woff'),
+      url('fonts/barlow/Barlow-ThinItalic.ttf') format('truetype'),
+      url('fonts/barlow/Barlow-ThinItalic.svg#Barlow-ThinItalic') format('svg');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('fonts/barlow/Barlow-SemiBoldItalic.eot');
+  src: url('fonts/barlow/Barlow-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/barlow/Barlow-SemiBoldItalic.woff2') format('woff2'),
+      url('fonts/barlow/Barlow-SemiBoldItalic.woff') format('woff'),
+      url('fonts/barlow/Barlow-SemiBoldItalic.ttf') format('truetype'),
+      url('fonts/barlow/Barlow-SemiBoldItalic.svg#Barlow-SemiBoldItalic') format('svg');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('fonts/barlow/Barlow-ExtraBoldItalic.eot');
+  src: url('fonts/barlow/Barlow-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/barlow/Barlow-ExtraBoldItalic.woff2') format('woff2'),
+      url('fonts/barlow/Barlow-ExtraBoldItalic.woff') format('woff'),
+      url('fonts/barlow/Barlow-ExtraBoldItalic.ttf') format('truetype'),
+      url('fonts/barlow/Barlow-ExtraBoldItalic.svg#Barlow-ExtraBoldItalic') format('svg');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('fonts/barlow/Barlow-LightItalic.eot');
+  src: url('fonts/barlow/Barlow-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/barlow/Barlow-LightItalic.woff2') format('woff2'),
+      url('fonts/barlow/Barlow-LightItalic.woff') format('woff'),
+      url('fonts/barlow/Barlow-LightItalic.ttf') format('truetype'),
+      url('fonts/barlow/Barlow-LightItalic.svg#Barlow-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('fonts/barlow/Barlow-MediumItalic.eot');
+  src: url('fonts/barlow/Barlow-MediumItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/barlow/Barlow-MediumItalic.woff2') format('woff2'),
+      url('fonts/barlow/Barlow-MediumItalic.woff') format('woff'),
+      url('fonts/barlow/Barlow-MediumItalic.ttf') format('truetype'),
+      url('fonts/barlow/Barlow-MediumItalic.svg#Barlow-MediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('fonts/barlow/Barlow-Thin.eot');
+  src: url('fonts/barlow/Barlow-Thin.eot?#iefix') format('embedded-opentype'),
+      url('fonts/barlow/Barlow-Thin.woff2') format('woff2'),
+      url('fonts/barlow/Barlow-Thin.woff') format('woff'),
+      url('fonts/barlow/Barlow-Thin.ttf') format('truetype'),
+      url('fonts/barlow/Barlow-Thin.svg#Barlow-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('fonts/barlow/Barlow-Medium.eot');
+  src: url('fonts/barlow/Barlow-Medium.eot?#iefix') format('embedded-opentype'),
+      url('fonts/barlow/Barlow-Medium.woff2') format('woff2'),
+      url('fonts/barlow/Barlow-Medium.woff') format('woff'),
+      url('fonts/barlow/Barlow-Medium.ttf') format('truetype'),
+      url('fonts/barlow/Barlow-Medium.svg#Barlow-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('fonts/barlow/Barlow-Regular.eot');
+  src: url('fonts/barlow/Barlow-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/barlow/Barlow-Regular.woff2') format('woff2'),
+      url('fonts/barlow/Barlow-Regular.woff') format('woff'),
+      url('fonts/barlow/Barlow-Regular.ttf') format('truetype'),
+      url('fonts/barlow/Barlow-Regular.svg#Barlow-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('fonts/barlow/Barlow-SemiBold.eot');
+  src: url('fonts/barlow/Barlow-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/barlow/Barlow-SemiBold.woff2') format('woff2'),
+      url('fonts/barlow/Barlow-SemiBold.woff') format('woff'),
+      url('fonts/barlow/Barlow-SemiBold.ttf') format('truetype'),
+      url('fonts/barlow/Barlow-SemiBold.svg#Barlow-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('fonts/barlow/Barlow-BoldItalic.eot');
+  src: url('fonts/barlow/Barlow-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/barlow/Barlow-BoldItalic.woff2') format('woff2'),
+      url('fonts/barlow/Barlow-BoldItalic.woff') format('woff'),
+      url('fonts/barlow/Barlow-BoldItalic.ttf') format('truetype'),
+      url('fonts/barlow/Barlow-BoldItalic.svg#Barlow-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('fonts/barlow/Barlow-Italic.eot');
+  src: url('fonts/barlow/Barlow-Italic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/barlow/Barlow-Italic.woff2') format('woff2'),
+      url('fonts/barlow/Barlow-Italic.woff') format('woff'),
+      url('fonts/barlow/Barlow-Italic.ttf') format('truetype'),
+      url('fonts/barlow/Barlow-Italic.svg#Barlow-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('fonts/barlow/Barlow-ExtraLight.eot');
+  src: url('fonts/barlow/Barlow-ExtraLight.eot?#iefix') format('embedded-opentype'),
+      url('fonts/barlow/Barlow-ExtraLight.woff2') format('woff2'),
+      url('fonts/barlow/Barlow-ExtraLight.woff') format('woff'),
+      url('fonts/barlow/Barlow-ExtraLight.ttf') format('truetype'),
+      url('fonts/barlow/Barlow-ExtraLight.svg#Barlow-ExtraLight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('fonts/barlow/Barlow-Black.eot');
+  src: url('fonts/barlow/Barlow-Black.eot?#iefix') format('embedded-opentype'),
+      url('fonts/barlow/Barlow-Black.woff2') format('woff2'),
+      url('fonts/barlow/Barlow-Black.woff') format('woff'),
+      url('fonts/barlow/Barlow-Black.ttf') format('truetype'),
+      url('fonts/barlow/Barlow-Black.svg#Barlow-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('fonts/barlow/Barlow-Light.eot');
+  src: url('fonts/barlow/Barlow-Light.eot?#iefix') format('embedded-opentype'),
+      url('fonts/barlow/Barlow-Light.woff2') format('woff2'),
+      url('fonts/barlow/Barlow-Light.woff') format('woff'),
+      url('fonts/barlow/Barlow-Light.ttf') format('truetype'),
+      url('fonts/barlow/Barlow-Light.svg#Barlow-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('fonts/barlow/Barlow-ExtraLightItalic.eot');
+  src: url('fonts/barlow/Barlow-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+      url('fonts/barlow/Barlow-ExtraLightItalic.woff2') format('woff2'),
+      url('fonts/barlow/Barlow-ExtraLightItalic.woff') format('woff'),
+      url('fonts/barlow/Barlow-ExtraLightItalic.ttf') format('truetype'),
+      url('fonts/barlow/Barlow-ExtraLightItalic.svg#Barlow-ExtraLightItalic') format('svg');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('fonts/barlow/Barlow-Bold.eot');
+  src: url('fonts/barlow/Barlow-Bold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/barlow/Barlow-Bold.woff2') format('woff2'),
+      url('fonts/barlow/Barlow-Bold.woff') format('woff'),
+      url('fonts/barlow/Barlow-Bold.ttf') format('truetype'),
+      url('fonts/barlow/Barlow-Bold.svg#Barlow-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
